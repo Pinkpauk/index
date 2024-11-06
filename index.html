@@ -8,63 +8,33 @@
     <style>
         @media (max-width: 768px) {
             .menu-item {
-                height: auto; /* Let the height adjust automatically for mobile */
                 padding: 15px;
-                margin: 5px 0;
             }
 
             .menu-item img {
-                width: 50px; /* Slightly smaller image size for mobile */
+                width: 50px;
                 height: 50px;
             }
-
-            .menu-item .name, .menu-item .price, .menu-item .select-button {
-                font-size: 14px;  /* Make text smaller on mobile */
-            }
         }
-        /*@media(max-width: 768px){
-           
-            .container {
-                flex-direction: column;
 
-                justify-content: center; 
-                text-align: center;
-                align-items: center;
-            }
-
-            .menu-section, .order-section {
+        @media (max-width: 480px) {
+            .menu-item {
                 padding: 10px;
             }
 
-            .menu-item {
-                margin: 10px 0;
-            }
-
             .menu-item img {
-                width: 70px; 
-                height: 70px;
+                width: 40px;
+                height: 40px;
             }
 
-            header {
-                text-align: center; 
-                padding: 15px;
-            }
-
-            .header-links a {
-                 margin: 5px 0;
-            }
-
-            .order-section {
-                border-left: none; 
-                margin-top: 15px;
-            }
-
-            .select-button {
-                padding: 5px; 
+            .menu-item .name,
+            .menu-item .price,
+            .menu-item .select-button {
+                font-size: 14px;
             }
         }
-*/
-
+               
+            
 
         /*        body*/
 
@@ -174,22 +144,14 @@
             border: 1px solid #D91656;
             background-color: #fff;
             text-align: center;
+
+            flex-direction: column;
+            justify-content: space-between;
+            height: auto; 
+            min-height: 200px; 
         }
 
-        /*.menu-item {
-            height: 200px;
-            width: 35%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between; 
-            margin: 10px 0;
-        }*/
-
-
-        /*.menu-item img {
-            max-width: 80px;
-            height: 90px;
-        }*/
+       
         .menu-item img {
             width: 70px; 
             height: 70px;
@@ -280,7 +242,6 @@
         .order-section {
             display: flex;
             flex-direction: column;
-/*            align-items: center; */
             padding: 0px;
             border: 1px solid #ddd;
         }
